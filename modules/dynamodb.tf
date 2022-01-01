@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "code-table" {
-  name         = "twicode-dev-code"
+  name         = "twicode-${var.env_name}-code"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "page_id"
 
